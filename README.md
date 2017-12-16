@@ -15,7 +15,7 @@ finally, you can use the following curl to try the app or using any rest client:
 --------------------------------------
 curl -X POST --user 'cms_mobile:Cms_m0b!l3' -d 'grant_type=password&username=test&password=test' http://localhost:9001/agilebis/oauth/token
 
-The Response should be like:-
+The Response should look like:-
 ---------------------------------
 {"access_token":"27c1d964-fcad-470f-b32b-219c662e6099",
 "token_type":"bearer",
@@ -24,7 +24,7 @@ The Response should be like:-
 "scope":"write"
 }
 
-You Should use the access token to call any API, so w'll use it to call api the should display the formatted Address using the following curl request:-
+You Should use the access token to call any API, so w'll use it to call api that should display the formatted Address using the following curl request:-
 ---------------------------------
 
 curl -i -H "Accept: application/json" -H "Authorization: Bearer 27c1d964-fcad-470f-b32b-219c662e6099" -X GET http://localhost:9001/agilebis/api/address?address=1600+20Amphitheatre+Parkway,+MountainView,CA
