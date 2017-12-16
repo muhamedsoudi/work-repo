@@ -32,7 +32,7 @@ public class GeoCodeResponse {
 		this.latitude = latitude;
 	}
 
-	public double getdoubleitude() {
+	public double getLongitude() {
 		return longitude;
 	}
 
